@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //-----------Uppgift 1-----------
+
+      var myFavoriteNumber = 7;
+      let myName = "Johan";
+      const myAge = 27;
+
+      //-----------Uppgift 2-----------
+
+      let bool = true;
+      let number = 75;
+      let string = "Text";
+      let myPet = { name: "Alvin", species: "Cat", age: "10år" };
+      let myFriends = ["Jack", "Sawyer", "Kate", "Hurley"];
+
+      //-----------Uppgift 3-----------
+
+      function multiply(x, y) {
+        return x * y;
+      }
+
+      let sum = multiply(3, 5);
+      console.log("Summan blir: " + sum + ".");
+
+      //-----------Uppgift 4-----------
+
+      var now = new Date();
+      console.log(now.toUTCString());
+
+      //-----------Uppgift 5-----------
+
+      let info = {
+        name: "Johan",
+        age: 27,
+        city: "Lund",
+      };
+
+      console.log(
+        "Hej, mitt namn är " +
+          info.name +
+          "." +
+          " Jag är " +
+          info.age +
+          " år gammal och bor i " +
+          info.city +
+          "."
+      );
+
+      //-----------Uppgift 6-----------
+
+      let lost = [4, 8, 15, 16, 23, 42];
+      console.log(lost);
+      console.log(lost[5]);
+
+      function low(x) {
+        return x < 20;
+      }
+
+      let lower = lost.filter(low);
+      console.log(lower);
+
+      const map = lower.map((x) => x * 2);
+
+      map.forEach((element) => console.log(element));
+
+      //-----------Uppgift 7-----------
+
+      let loop = 0;
+
+      while (loop <= 6) {
+        loop++;
+
+        if (loop <= 3) {
+          console.log("Loop " + loop);
+        }
+
+        if (loop > 4) {
+          console.log("Almost done...");
+        }
+
+        if (loop > 6) {
+          console.log("Done!");
+        }
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>
